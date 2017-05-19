@@ -10,12 +10,12 @@ public class Main {
 
 	public static void main(String argv[]) {
 		try {
-			Document doc = getXMLDoc("C:/Users/bart-/workspace/RoosterApp/res/staff.xml");
+			Document doc = getXMLDoc("C:/Users/bart-/git/dpgroep/res/staff.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("vak");
 
 			for (int item = 0; item < nList.getLength(); item++) {
 				Node nNode = nList.item(item);
-				System.out.println("\nTABLE NAME: " + nNode.getNodeName());
+				System.out.println("TABLE NAME: " + nNode.getNodeName() + "\n");
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
 					System.out.println("Vak ID: " + eElement.getAttribute("id"));

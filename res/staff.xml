@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<rooster>
+	<vak id="V1AUI">
+		<studiepunten>5</studiepunten>
+	</vak>
+	<vak id="V1OODC">
+		<studiepunten>5</studiepunten>
+	</vak>
+	<vak id="V1IDP">
+		<studiepunten>5</studiepunten>
+	</vak>
+	<vak id="V1WAC">
+		<studiepunten>5</studiepunten>
+	</vak>
+	<vak id="V1DP">
+		<studiepunten>5</studiepunten>
+	</vak>
+</rooster>

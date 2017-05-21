@@ -16,6 +16,7 @@ public class Main {
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
 					System.out.println("Vak ID: " + eElement.getAttribute("id"));
+					System.out.println("Vaknaam: " + eElement.getElementsByTagName("naam").item(0).getTextContent());
 					System.out.println("Studiepunten: " + eElement.getElementsByTagName("studiepunten").item(0).getTextContent());
 				}
 			}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<docenten>
+    <docent id="V1A">
+		<naam>V1A</naam>
+    </docent>
+    <docent id="V1B">
+		<naam>V1B</naam>	
+    </docent>
+    <docent id="V1C">
+		<naam>V1C</naam>
+    </docent>
+    <docent id="V1D">
+		<naam>V1D</naam>
+    </docent>
+    <docent id="V1E">
+		<naam>V1E</naam>
+    </docent>
+	<docent id="V1F">
+		<naam>V1F</naam>
+	</docent>
+</docenten>

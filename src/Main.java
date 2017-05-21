@@ -10,7 +10,7 @@ public class Main {
 
 	public static void main(String argv[]) {
 		try {
-			Document doc = getXMLDoc("C:/Users/bart-/git/dpgroep/res/staff.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = getXMLDoc("res/vak.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("vak");
 
 			for (int item = 0; item < nList.getLength(); item++) {

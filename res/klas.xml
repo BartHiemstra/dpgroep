@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<klassen>
+    <klas id="V1A">
+		<naam>V1A</naam>
+    </klas>
+    <klas id="V1B">
+		<naam>V1B</naam>	
+    </klas>
+    <klas id="V1C">
+		<naam>V1C</naam>
+    </klas>
+    <klas id="V1D">
+		<naam>V1D</naam>
+    </klas>
+    <klas id="V1E">
+		<naam>V1E</naam>
+    </klas>
+	<klas id="V1F">
+		<naam>V1F</naam>
+	</klas>
+</klassen>

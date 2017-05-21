@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<colleges>
+    <college id="V1A">
+		<naam>V1A</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+    </college>
+    <college id="V1B">
+		<naam>V1B</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+    </college>
+    <college id="V1C">
+		<naam>V1C</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+    </college>
+    <college id="V1D">
+		<naam>V1D</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+    </college>
+    <college id="V1E">
+		<naam>V1E</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+    </college>
+	<college>
+		<naam>V1F</naam>
+		<docent></docent>
+		<klas></klas>
+		<datum></datum>
+	</college>
+</colleges>

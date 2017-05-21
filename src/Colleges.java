@@ -24,7 +24,7 @@ public class Colleges {
 
 		try {
 			DateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-			Document doc = Utils.getXMLDoc("C:/Users/Robin van Vlijmen/git/dpgroep/res/Colleges.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = Utils.getXMLDoc("res/Colleges.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("College");
 			
 

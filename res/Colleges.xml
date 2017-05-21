@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rooster>
+    <College vakID="V1AA" klasID="V1A" docentID="Dansen">
+        <Datum>20-5-2017</Datum>
+    </College>
+    <College vakID="V1BA" klasID="V1B" docentID="Bansen">
+        <Datum>19-5-2017</Datum>
+    </College>
+    <College vakID="V1CA" klasID="V1C" docentID="Dansen">
+        <Datum>25-3-2018</Datum>
+    </College>
+</rooster>

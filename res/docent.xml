@@ -1,21 +1,18 @@
 <?xml version="1.0"?>
 <docenten>
-    <docent id="V1A">
-		<naam>V1A</naam>
+    <docent id="1">
+		<naam>docent1</naam>
     </docent>
-    <docent id="V1B">
-		<naam>V1B</naam>	
+    <docent id="2">
+		<naam>docent2</naam>	
     </docent>
-    <docent id="V1C">
-		<naam>V1C</naam>
+    <docent id="3">
+		<naam>docent3</naam>
     </docent>
-    <docent id="V1D">
-		<naam>V1D</naam>
+    <docent id="4">
+		<naam>docent4</naam>
     </docent>
-    <docent id="V1E">
-		<naam>V1E</naam>
+    <docent id="5">
+		<naam>docent5</naam>
     </docent>
-	<docent id="V1F">
-		<naam>V1F</naam>
-	</docent>
 </docenten>

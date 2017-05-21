@@ -1,24 +1,28 @@
 <?xml version="1.0"?>
 <rooster>
     <vak id="V1AUI">
-		<naam>V1AUI</naam>
+		<naam>Analysis & User Interfacing</naam>
         <studiepunten>5</studiepunten>
     </vak>
     <vak id="V1OODC">
-		<naam>V1OODC</naam>
+		<naam>OO Design & Construction</naam>
         <studiepunten>5</studiepunten>
 		
     </vak>
     <vak id="V1IDP">
-		<naam>V1DP</naam>
+		<naam>Intra Disciplinary Project</naam>
         <studiepunten>5</studiepunten>
     </vak>
     <vak id="V1WAC">
-		<naam>V1WAC</naam>
+		<naam>Web Applicatin Construction</naam>
         <studiepunten>5</studiepunten>
     </vak>
     <vak id="V1DP">
-		<naam>V1DP</naam>
+		<naam>Data Processing</naam>
+        <studiepunten>5</studiepunten>
+    </vak>
+	<vak id="V1IPASS">
+		<naam>Individual Propedeuse Assessment</naam>
         <studiepunten>5</studiepunten>
     </vak>
 </rooster>

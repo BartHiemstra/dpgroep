@@ -12,6 +12,11 @@ public class Colleges {
 	
 
 	public static void main(String args[]) {
+		System.out.println(getDatumsOpVolgorde());
+	}
+		
+		public static ArrayList<String> getDatumsOpVolgorde(){
+			
 		ArrayList<String> xmlLijst = new ArrayList<String>();
 		ArrayList<String> opvolgorde = new ArrayList<String>();
 		String huidigeHoogste = "";
@@ -34,24 +39,27 @@ public class Colleges {
 					Element eElement = (Element) nNode;
 					String datumUitxml =  eElement.getElementsByTagName("Datum").item(0).getTextContent();
 					String vakID = eElement.getAttribute("vakID");
+					String klasID = eElement.getAttribute("klasID");
+					String docentID = eElement.getAttribute("docentID");
 					
-					System.out.println(vakID + " " + datumUitxml);
-					xmlLijst.add(vakID + " " + datumUitxml);
+					
+					System.out.println(vakID + " " + klasID + " " + docentID + " " + datumUitxml);
+					xmlLijst.add(vakID + " " + klasID + " " + docentID + " " + datumUitxml);
 	
 				}
 			}
 		} 
 		catch (Exception e) {
-			e.printStackTrace();
 		}
 		lengte_xmlLijst = xmlLijst.size();
+		System.out.println(lengte_xmlLijst);
 		int deindex = 0;
 		
 		while (opvolgorde.size() != lengte_xmlLijst){
 			huidigeHoogste = xmlLijst.get(0);
-			dagHoogste =  Integer.parseInt(huidigeHoogste.split(" ")[1].split("-")[0]);
-			maandHoogste = Integer.parseInt(huidigeHoogste.split(" ")[1].split("-")[1]);
-			jaarHoogste = Integer.parseInt(huidigeHoogste.split(" ")[1].split("-")[2]);
+			dagHoogste =  Integer.parseInt(huidigeHoogste.split(" ")[3].split("-")[0]);
+			maandHoogste = Integer.parseInt(huidigeHoogste.split(" ")[3].split("-")[1]);
+			jaarHoogste = Integer.parseInt(huidigeHoogste.split(" ")[3].split("-")[2]);
 			
 			deindex = 0;
 			
@@ -59,9 +67,9 @@ public class Colleges {
 					
 					if (!item.equals(huidigeHoogste)){
 						
-						int dagitem = Integer.parseInt(item.split(" ")[1].split("-")[0]);
-						int maanditem = Integer.parseInt(item.split(" ")[1].split("-")[1]);
-						int jaaritem = Integer.parseInt(item.split(" ")[1].split("-")[2]);
+						int dagitem = Integer.parseInt(item.split(" ")[3].split("-")[0]);
+						int maanditem = Integer.parseInt(item.split(" ")[3].split("-")[1]);
+						int jaaritem = Integer.parseInt(item.split(" ")[3].split("-")[2]);
 						
 						
 							if ((jaaritem < jaarHoogste) || (jaaritem <= jaarHoogste & maanditem < maandHoogste) || (jaaritem <= jaarHoogste & maanditem <= maandHoogste & dagitem < dagHoogste)){
@@ -80,5 +88,7 @@ public class Colleges {
 		for (String item : opvolgorde){
 			System.out.println(item);
 		}
+		return opvolgorde;
 	}
 }
+

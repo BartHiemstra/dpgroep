@@ -12,7 +12,7 @@ public class Docent {
 	
 	public static void main(String argv[]) {
 		try {
-			Document doc = getXMLDoc("res/docent.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = Utils.getXMLDoc("res/docent.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("docent");
 			System.out.println("TABLE NAME: docenten \n");
 
@@ -28,20 +28,4 @@ public class Docent {
 			e.printStackTrace();
 		}
 	}
-
-	public static Document getXMLDoc(String fileName) {
-		try {
-			File XMLfile = new File(fileName);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(XMLfile);
-			doc.getDocumentElement().normalize();
-			return doc;
-		} 
-		catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
-
 }

@@ -29,7 +29,7 @@ public class Colleges {
 
 		try {
 			DateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-			Document doc = getXMLDoc("C:/Users/Robin van Vlijmen/git/dpgroep/res/Colleges.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = Utils.getXMLDoc("C:/Users/Robin van Vlijmen/git/dpgroep/res/Colleges.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("College");
 			
 
@@ -84,21 +84,6 @@ public class Colleges {
 		System.out.println("Opvolgorde van datum");
 		for (String item : opvolgorde){
 			System.out.println(item);
-		}
-	}
-
-	public static Document getXMLDoc(String fileName) {
-		try {
-			File XMLfile = new File(fileName);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(XMLfile);
-			doc.getDocumentElement().normalize();
-			return doc;
-		} 
-		catch (Exception e) {
-			e.printStackTrace();
-			return null;
 		}
 	}
 }

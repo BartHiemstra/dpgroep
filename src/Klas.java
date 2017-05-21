@@ -12,7 +12,7 @@ public class Klas {
 	
 	public static void main(String argv[]) {
 		try {
-			Document doc = getXMLDoc("res/klas.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = Utils.getXMLDoc("res/klas.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("klas");
 			System.out.println("TABLE NAME: klassen \n");
 
@@ -28,20 +28,4 @@ public class Klas {
 			e.printStackTrace();
 		}
 	}
-
-	public static Document getXMLDoc(String fileName) {
-		try {
-			File XMLfile = new File(fileName);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(XMLfile);
-			doc.getDocumentElement().normalize();
-			return doc;
-		} 
-		catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
-	}
-
 }

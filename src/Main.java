@@ -10,7 +10,7 @@ public class Main {
 
 	public static void main(String argv[]) {
 		try {
-			Document doc = getXMLDoc("res/vak.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
+			Document doc = Utils.getXMLDoc("res/vak.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("vak");
 
 			for (int item = 0; item < nList.getLength(); item++) {
@@ -25,21 +25,6 @@ public class Main {
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
-		}
-	}
-
-	public static Document getXMLDoc(String fileName) {
-		try {
-			File XMLfile = new File(fileName);
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(XMLfile);
-			doc.getDocumentElement().normalize();
-			return doc;
-		} 
-		catch (Exception e) {
-			e.printStackTrace();
-			return null;
 		}
 	}
 }

@@ -1,12 +1,12 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <rooster>
-    <College vakID="V1AUI" klasID="V1A" docentID="1">
-        <Datum>20-5-2017</Datum>
-    </College>
-    <College vakID="V1OODC" klasID="V1B" docentID="2">
-        <Datum>19-5-2017</Datum>
-    </College>
-    <College vakID="V1IDP" klasID="V1C" docentID="1">
-        <Datum>25-3-2018</Datum>
-    </College>
+  <college docentID="1" klasID="V1A" vakID="V1AUI">
+    <datum>20-5-2017</datum>
+  </college>
+  <college docentID="2" klasID="V1B" vakID="V1OODC">
+    <datum>19-5-2017</datum>
+  </college>
+  <college docentID="1" klasID="V1C" vakID="V1IDP">
+    <datum>25-3-2018</datum>
+  </college>
 </rooster>

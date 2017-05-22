@@ -9,10 +9,10 @@
   <college docentID="1" klasID="V1C" vakID="V1IDP">
     <datum>25-3-2018</datum>
   </college>
-  <college docentID="3" klasID="V1D" vakID="AUI">
+  <college docentID="3" klasID="V1D" vakID="V1AUI">
     <datum>06-08-1996</datum>
   </college>
-  <college docentID="1" klasID="V1D" vakID="AUI">
-    <datum>22-5-2017</datum>
+  <college docentID="1" klasID="V1B" vakID="V1AUI">
+    <datum>22-5-2222</datum>
   </college>
 </rooster>

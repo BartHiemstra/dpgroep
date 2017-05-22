@@ -112,16 +112,21 @@ public class visual extends Application {
 			return;
 
 		}
-		if (u1.exists(docent)==false) {
+		if (u1.exists(docent)==false || u1.exists2(klas)==false || u1.exists3(vak)==false) {
 			
 			//hier wordt gecontroleerd of deze lessen uberhoubt bestaan
 			intro.setText("deze velden zijn fout");
 			return;
 		}
 		
-		String s= vak+" "+docent+" "+klas+" "+lesDatum;
+		String s= vak+" "+docent+" "+klas+" "+lesDatum+" ";
+		String s3= vak+" "+klas+" "+docent+" "+lesDatum;
 		for(String f:deLes){
-			if(f.equals(s)){
+			System.out.println(f+"f");
+			System.out.println(s3+"f");
+			if(f.equals(s3)){
+			
+				
 				intro.setText("Deze velden bestaan al");
 				return;
 			}
@@ -196,6 +201,8 @@ public class visual extends Application {
 	public static void main(String[] args) {
 		Application.launch(args);
 	
+		
+		
 
 	}
 }

@@ -34,9 +34,54 @@ public class Utils {
 				
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
 					Element element = (Element) node;
-					System.out.println(element.getAttribute("id"));
-					System.out.println("check 1 2 3");
+
 					if(element.getAttribute("id").equals(docentID)){
+						return true;}
+				}
+			}
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	
+	public static boolean exists2(String KlasID) {
+		try {
+			Document doc = Utils.getXMLDoc("res/klas.xml");
+			NodeList nList = doc.getElementsByTagName("klas");
+
+			for (int item = 0; item < nList.getLength(); item++) {
+				Node node = nList.item(item);
+				
+				if (node.getNodeType() == Node.ELEMENT_NODE) {
+					Element element = (Element) node;
+					System.out.println(element.getAttribute("id"));
+					if(element.getAttribute("id").equals(KlasID)){
+						
+						return true;}
+				}
+			}
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	public static boolean exists3(String vakID) {
+		try {
+			Document doc = Utils.getXMLDoc("res/vak.xml");
+			NodeList nList = doc.getElementsByTagName("vak");
+
+			for (int item = 0; item < nList.getLength(); item++) {
+				Node node = nList.item(item);
+				
+				if (node.getNodeType() == Node.ELEMENT_NODE) {
+					Element element = (Element) node;
+					System.out.println(element.getAttribute("id"));
+					if(element.getAttribute("id").equals(vakID)){
+						
 						return true;}
 				}
 			}

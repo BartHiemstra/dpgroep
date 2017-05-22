@@ -20,13 +20,14 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
 public class Colleges {
+	public Colleges(){}
 
 	String collegeString = null;
 
-	public static void main(String args[]) {
+	/*public static void main(String args[]) {
 		System.out.println(getDatumsOpVolgorde());
 		createLes("3", "06-08-1996", "V1D", "AUI");
-	}
+	}*/
 
 	public static void createLes(String docentID, String date, String klasID, String vakID) {
 		try {

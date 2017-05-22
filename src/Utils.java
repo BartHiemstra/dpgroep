@@ -31,10 +31,13 @@ public class Utils {
 
 			for (int item = 0; item < nList.getLength(); item++) {
 				Node node = nList.item(item);
+				
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
 					Element element = (Element) node;
-					if(element.getAttribute("id") == docentID)
-						return true;
+					System.out.println(element.getAttribute("id"));
+					System.out.println("check 1 2 3");
+					if(element.getAttribute("id").equals(docentID)){
+						return true;}
 				}
 			}
 		} 

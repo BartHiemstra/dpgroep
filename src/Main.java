@@ -17,8 +17,9 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main {
+	public Main(){}
 
-	public static void main(String argv[]) {
+	/**public static void main(String argv[]) {
 		try {
 			Document doc = getXMLDoc("res/staff.xml"); //CHANGE TO YOUR OWN DIRECTORY //Requires method to find it dynamically.
 			NodeList nList = doc.getElementsByTagName("vak");
@@ -36,7 +37,7 @@ public class Main {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	public static Document getXMLDoc(String fileName) {
 		try {

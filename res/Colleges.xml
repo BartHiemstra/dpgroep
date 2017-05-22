@@ -9,4 +9,7 @@
   <college docentID="1" klasID="V1C" vakID="V1IDP">
     <datum>25-3-2018</datum>
   </college>
+  <college docentID="3" klasID="V1D" vakID="AUI">
+    <datum>06-08-1996</datum>
+  </college>
 </rooster>

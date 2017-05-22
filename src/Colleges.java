@@ -98,13 +98,13 @@ public class Colleges {
 		try {
 			DateFormat format = new SimpleDateFormat("dd-MM-yyyy");
 			Document doc = Utils.getXMLDoc("res/Colleges.xml");
-			NodeList nList = doc.getElementsByTagName("College");
+			NodeList nList = doc.getElementsByTagName("college");
 
 			for (int item = 0; item < nList.getLength(); item++) {
 				Node nNode = nList.item(item);
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 					Element eElement = (Element) nNode;
-					String datumUitxml = eElement.getElementsByTagName("Datum").item(0).getTextContent();
+					String datumUitxml = eElement.getElementsByTagName("datum").item(0).getTextContent();
 					String vakID = eElement.getAttribute("vakID");
 					String klasID = eElement.getAttribute("klasID");
 					String docentID = eElement.getAttribute("docentID");

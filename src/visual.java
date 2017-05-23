@@ -37,14 +37,14 @@ public class visual extends Application {
 	
 	
 	// hoe je labels maakt
-	Label intro = new Label("welkom bij roosterapp");
-	Label text = new Label("Docent invoeren");
+	Label intro = new Label("Welkom bij de roosterapp");
+	Label text = new Label("Voer een docent in:");
 	TextField docentInput = new TextField("");
-	Label datum = new Label("les:");
+	Label datum = new Label("Voer een datum in:");
 	DatePicker datumvoorles = new DatePicker();
-	Label klas = new Label("klas:");
+	Label klas = new Label("Voer een klas in:");
 	TextField klasInput = new TextField("");
-	Label vak = new Label("vak:");
+	Label vak = new Label("Voer een vak:");
 	TextField vakInput = new TextField("");
 	Label roosterVlak=new Label();
 
@@ -74,8 +74,8 @@ public class visual extends Application {
 		roosterVlak.setPrefSize(700, 150);
 		// buttons and boxes
 		HBox box = new HBox(10);
-		Button but1 = new Button("reset");
-		Button but2 = new Button("laadrooster");
+		Button but1 = new Button("Bevestig invoering");
+		Button but2 = new Button("Rooster inladen");
 
 		// buttons implementeren
 		but1.setOnAction(e -> voeglestoe());

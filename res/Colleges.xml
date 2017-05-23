@@ -3,9 +3,6 @@
   <college docentID="1" klasID="V1A" vakID="V1AUI">
     <datum>20-5-2017</datum>
   </college>
-  <college docentID="2" klasID="V1B" vakID="V1OODC">
-    <datum>19-5-2017</datum>
-  </college>
   <college docentID="1" klasID="V1C" vakID="V1IDP">
     <datum>25-3-2018</datum>
   </college>
@@ -14,5 +11,11 @@
   </college>
   <college docentID="1" klasID="V1B" vakID="V1AUI">
     <datum>22-5-2222</datum>
+  </college>
+  <college docentID="2" klasID="V1D" vakID="V1AUI">
+    <datum>22-5-2017</datum>
+  </college>
+  <college docentID="5" klasID="V1D" vakID="V1AUI">
+    <datum>23-5-2017</datum>
   </college>
 </rooster>
